@@ -39,3 +39,46 @@ Route::get('blog', function () {
 //controller
 Route::get('hello', [Coba::class, 'helloword']);
 //Route::get('hello', 'App\Http\Controllers\Coba@helloworld');
+
+//namafile boleh sama dgn asli atau beda
+Route::get('pertama', function () {
+	return view('pertama');
+});
+
+
+//route untuk file tugas-ets
+Route::get('frontend', function () {
+	return view('frontend');
+});
+
+Route::get('pertama', function () {
+	return view('pertama');
+});
+
+Route::get('latihan', function () {
+	return view('latihan');
+});
+
+Route::get('js1', function () {
+	return view('js1');
+});
+
+Route::get('js2', function () {
+	return view('js2');
+});
+
+Route::get('index', function () {
+	return view('index');
+});
+
+Route::get('indahkus', function () {
+	return view('indahkus');
+});
+
+Route::get('bootsrap1', function () {
+	return view('bootsrap1');
+});
+
+Route::get('bootsrap2', function () {
+	return view('bootsrap2');
+});

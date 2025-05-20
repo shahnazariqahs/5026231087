@@ -1,0 +1,28 @@
+.galeri{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.row {
+    margin-top: 8px;
+}
+
+.card{
+    margin-right: 7px;
+    width: 80px; 
+    height: 105px; 
+    border-radius: 10px
+}
+
+.card-body p{
+    text-align: left;
+    font-size: 7px;
+
+}
+
+.card-img{
+    padding-top: 8px;;
+}

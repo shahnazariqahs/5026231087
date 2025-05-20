@@ -1,0 +1,70 @@
+body{
+    font-family: Inter;
+    background-color: rgb(173, 183, 230);
+    color :black;
+    margin-left: 50;
+    margin-right: 50;
+
+   } 
+
+   .zoom{
+    zoom: 5;
+    color: antiquewhite;
+   }
+
+   .container{
+    position: relative;
+    width: 600px;
+   }
+
+
+   .foto1{
+    width: 600px;
+   }
+
+   .kotak{
+    top:0px;
+    position:absolute;
+    height: 275px;
+    width: 600px;
+    background-color: blue;
+    opacity: 0.3;
+
+   }
+
+   .pointer {cursor: pointer;}
+
+   p{
+    text-decoration: solid;
+   }
+
+   a:link{
+    color: rgb(42, 54, 165);
+    text-decoration: none;
+   }
+
+   a:hover{
+    color: rgb(21, 137, 190);
+    text-decoration: none;
+    font-weight: bold;
+   }
+
+   a:visited{
+    color: rgb(112, 42, 165);
+    text-decoration: none;
+   }
+
+   .kalimatpembuka{
+    font-size: small;
+    border: chocolate;
+    border-radius: 50px;
+   }
+
+   
+
+
+
+
+
+  
+
