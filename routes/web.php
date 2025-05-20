@@ -51,7 +51,7 @@ Route::get('frontend', function () {
 	return view('frontend');
 });
 
-//route untuk file tugas-ets
+//route untuk file tugas hingga ets
 Route::get('pertama', function () {
 	return view('pertama');
 });
