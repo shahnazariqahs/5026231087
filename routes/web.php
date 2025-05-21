@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Coba;
+use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\BlogController;
 //sama dengan import java.io.*
 
 /*
@@ -68,8 +70,8 @@ Route::get('js2', function () {
 	return view('js2');
 });
 
-Route::get('index', function () {
-	return view('index');
+Route::get('ets', function () {
+	return view('ets');
 });
 
 Route::get('indahkus', function () {
@@ -83,3 +85,23 @@ Route::get('bootsrap1', function () {
 Route::get('bootsrap2', function () {
 	return view('bootsrap2');
 });
+
+
+//4
+Route::get('dosen', [Coba::class, 'index']);
+
+//5
+Route::get('/pegawai/{nama}', [PegawaiController::class, 'index'] );
+
+//menangkap data dari inputan
+
+//halaman isian formulir
+Route::get('/formulir', [PegawaiController::class, 'formulir']);
+//action form : redirect
+Route::post('/formulir/proses', [PegawaiController::class, 'proses']);
+
+//8
+// route blog
+Route::get('/blog', [BlogController::class,'home']);
+Route::get('/blog/tentang', [BlogController::class,'tentang']);
+Route::get('/blog/kontak', [BlogController::class,'kontak']);
