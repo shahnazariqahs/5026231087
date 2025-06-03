@@ -12,15 +12,12 @@ class PegawaiController extends Controller
     }
 
     public function formulir(){
-
-        return view('formulir');
-
+    	return view('formulir');
     }
 
     public function proses(Request $request){
         $nama = $request->input('nama');
      	$alamat = $request->input('alamat');
-        return "Nama : ".$nama."<br> Alamat : ".$alamat;
-        // return "Nama : ".$nama."<br> Alamat : ".$alamat ."aslinya : ".$request;
+        return "Nama : ".$nama."<br>Alamat : ".$alamat . "<br>Aslinya: " . $request;
     }
 }

@@ -68,8 +68,8 @@
     <p class="mb-4">~shahnazariqahs 087</p>
 
     <a href="{{ url('pertama') }}" class="linktree-btn">Week 1 - Html Pertama</a>
-    <a href="{{ url('bootsrap1') }}" class="linktree-btn">Week 2 - Bootsrap 1</a>
-    <a href="{{ url('bootsrap2') }}" class="linktree-btn">Week 2 - Bootsrap 2</a>
+    <a href="{{ url('bootsrap1') }}" class="linktree-btn">Week 3 - Bootsrap 1</a>
+    <a href="{{ url('bootsrap2') }}" class="linktree-btn">Week 3 - Bootsrap 2</a>
     <a href="{{ url('latihan') }}" class="linktree-btn">Week 4 - Latihan Soal 6</a>
     <a href="{{ url('indahkus') }}" class="linktree-btn">Week 5 - Tugas Linktree : IndahKus</a>
     <a href="{{ url('js1') }}" class="linktree-btn">Week 7 - Javascript1</a>
