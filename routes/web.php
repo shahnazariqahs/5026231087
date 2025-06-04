@@ -134,3 +134,8 @@ Route::post('/pegawai/update', [PegawaiDBController:: class, 'update']);
 //12
 //hapus
 Route::get('/pegawai/hapus/{id}', [PegawaiDBController:: class, 'hapus']);
+
+//16
+//cari
+Route::get('/pegawai/cari', [PegawaiDBController:: class, 'cari']);
+
