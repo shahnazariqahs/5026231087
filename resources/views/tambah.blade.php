@@ -66,7 +66,7 @@
                 </div>
         </div>
 
-        <input type="submit" value="Simpan Data" class="btn btn-success"
+        <input type="submit" value="Simpan Data" class="btn btn-success">
 
 		{{-- Nama <input type="text" name="nama" required="required"> <br/>
 		Jabatan <input type="text" name="jabatan" required="required"> <br/>

@@ -1,4 +1,3 @@
-<html>
 
     <head>
 
@@ -17,7 +16,7 @@
             function hello()
             {
                 alert("Selamat Anda mendapat 1 Milyar");
-                
+
             }
 
             function tambah()

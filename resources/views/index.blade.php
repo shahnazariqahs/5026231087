@@ -4,12 +4,12 @@
 
 	<h3>Data Pegawai</h3>
 
-	<a href="/pegawai/tambah" class="btn-btn-primary"> + Tambah Pegawai Baru</a>
+	<a href="/pegawai/tambah" class="btn btn-primary mb-3"> + Tambah Pegawai Baru</a>
 
 	<p>Cari Data Pegawai :</p>
 	<form action="/pegawai/cari" method="GET">
 		<input type="text" class="form-control" name="cari" placeholder="Cari Pegawai ..">
-		<input type="submit" value="CARI" class="btn btn-info">
+		<input type="submit" value="CARI" class="btn btn-info mt-3">
 	</form>
 
 	<br/>

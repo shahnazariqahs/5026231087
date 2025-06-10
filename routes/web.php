@@ -5,6 +5,7 @@ use App\Http\Controllers\Coba;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\MakananDBController;
 //sama dengan import java.io.*
 
 /*
@@ -51,48 +52,48 @@ Route::get('pertama', function () {
 
 //route kumpulan tugas
 Route::get('frontend', function () {
-	return view('frontend');
+	return view('satuEts.frontend');
 });
 
 //route untuk file tugas hingga ets
 //pt 1
 Route::get('pertama', function () {
-	return view('pertama');
+	return view('satuEts.pertama');
 });
 
 //latihan pt2 diedit langsung di file pt1
 
 //3
 Route::get('bootsrap1', function () {
-	return view('bootsrap1');
+	return view('satuEts.bootsrap1');
 });
 
 Route::get('bootsrap2', function () {
-	return view('bootsrap2');
+	return view('satuEts.bootsrap2');
 });
 
 //pt 4
 Route::get('latihan', function () {
-	return view('latihan');
+	return view('satuEts.latihan');
 });
 
 //tugas linktree pt 5
 Route::get('indahkus', function () {
-	return view('indahkus');
+	return view('satuEts.indahkus');
 });
 
 //pt 7
 Route::get('js1', function () {
-	return view('js1');
+	return view('satuEts.js1');
 });
 
 Route::get('js2', function () {
-	return view('js2');
+	return view('satuEts.js2');
 });
 
 //ets
 Route::get('ets', function () {
-	return view('ets');
+	return view('satuEts.ets');
 });
 
 //4
@@ -139,3 +140,24 @@ Route::get('/pegawai/hapus/{id}', [PegawaiDBController:: class, 'hapus']);
 //cari
 Route::get('/pegawai/cari', [PegawaiDBController:: class, 'cari']);
 
+//tugas pt 14
+//makanan
+//menampilkan db
+Route::get('/makanan', [MakananDBController:: class, 'index']);
+
+//input data
+Route::get('/makanan/tambah', [MakananDBController:: class, 'tambah']);
+
+//store
+Route::post('/makanan/store', [MakananDBController:: class, 'store']);
+
+//edit
+Route::get('/makanan/edit/{id}', [MakananDBController::class, 'edit']);
+//update
+Route::post('/makanan/update', [MakananDBController:: class, 'update']);
+
+//hapus
+Route::get('/makanan/hapus/{id}', [MakananDBController:: class, 'hapus']);
+
+//cari
+Route::get('/makanan/cari', [MakananDBController:: class, 'cari']);
