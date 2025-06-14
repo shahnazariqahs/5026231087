@@ -6,6 +6,7 @@
 
 	<br/>
 
+    <a href="/keranjang/beli" class="btn btn-primary mb-3"> + Beli Barang Baru</a>
 
 	<table class="table table-striped table-hover">
 		<tr>
@@ -26,7 +27,6 @@
 			<td>{{ number_format($k->Harga, 0, ',', '.') }}</td>
             <td>{{ number_format($k->Jumlah * $k->Harga, 0, ',', '.') }}</td>
             <td>
-                <a href="/keranjang/beli/" class="btn btn-success">Beli</a>
 				<a href="/keranjang/batal/{{ $k->ID }}" class="btn btn-danger">Batal</a>
 			</td>
 		</tr>

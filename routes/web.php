@@ -7,6 +7,8 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\MakananDBController;
 use App\Http\Controllers\KeranjangDBController;
+use App\Http\Controllers\KaryawanDBController;
+use App\Http\Controllers\CounterDBController;
 //sama dengan import java.io.*
 
 /*
@@ -163,10 +165,21 @@ Route::get('/makanan/hapus/{id}', [MakananDBController:: class, 'hapus']);
 //cari
 Route::get('/makanan/cari', [MakananDBController:: class, 'cari']);
 
+
 //Route keranjangbelanja
 //Route tampilkan dan beli
 Route::get('/keranjang', [KeranjangDBController:: class, 'index']);
 Route::get('/keranjang/beli', [KeranjangDBController:: class, 'beli']);
-//store dan bata
+
+//store dan batal
 Route::post('/keranjang/store', [KeranjangDBController:: class, 'store']);
 Route::get('/keranjang/batal/{ID}', [KeranjangDBController:: class, 'batal']);
+
+//route karyawan
+Route::get('/karyawan', [KaryawanDBController:: class, 'index']);
+Route::get('/karyawan/tambah', [KaryawanDBController::class, 'tambah']);
+Route::post('/karyawan/store', [KaryawanDBController::class, 'store']);
+Route::delete('/karyawan/hapus/{kodepegawai}', [KaryawanDBController::class, 'hapus'])->name('karyawan.hapus');
+
+//route counter
+Route::get('/counter',[CounterDBController::class, 'index']);
