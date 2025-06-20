@@ -9,6 +9,8 @@ use App\Http\Controllers\MakananDBController;
 use App\Http\Controllers\KeranjangDBController;
 use App\Http\Controllers\KaryawanDBController;
 use App\Http\Controllers\CounterDBController;
+use App\Http\Controllers\MykaryawanController;
+
 //sama dengan import java.io.*
 
 /*
@@ -183,3 +185,18 @@ Route::delete('/karyawan/hapus/{kodepegawai}', [KaryawanDBController::class, 'ha
 
 //route counter
 Route::get('/counter',[CounterDBController::class, 'index']);
+
+//route eas mykaryawan
+
+Route::get('/eas', [MykaryawanController:: class, 'index']);
+
+//mykaryawan view
+Route::get('/eas/view/{kodepegawai}', [MykaryawanController::class,'view']);
+
+Route::get('/eas/edit/{kodepegawai}', [MykaryawanController::class, 'edit']);
+
+Route::post('/eas/update', [MykaryawanController:: class, 'update']);
+
+
+
+

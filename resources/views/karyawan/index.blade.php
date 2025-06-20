@@ -35,6 +35,4 @@
     </table>
     <a href="/karyawan/tambah?page={{ request()->get('page') }}" class="btn btn-primary">Tambah Karyawan</a>
     <div class="d-flex justify-content-center mt-3">
-
-        {{ $karyawan->links() }}
     @endsection
